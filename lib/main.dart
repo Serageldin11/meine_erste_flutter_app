@@ -29,7 +29,7 @@ class _KleineSeiteState extends State<KleineSeite> {
       ),
       body: Column(
         children: <Widget>[
-          Image.network(""),
+          Image.network("https://www.hs-fulda.de/fileadmin/user_upload/Icons/hochschule_fulda_logo_opengraph.jpg"),
           reiheMachen("Name", "Serag"),
           reiheMachen("Alter", "20"),
           reiheMachen("checkt", "nix"),
