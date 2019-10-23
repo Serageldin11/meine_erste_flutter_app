@@ -34,14 +34,14 @@ class _KleineSeiteState extends State<KleineSeite> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Opacity(
-                opacity: 0.0,
+                //opacity: 0.0,
                 child: Image.network(
                     "https://www.hs-fulda.de/fileadmin/user_upload/Icons/hochschule_fulda_logo_opengraph.jpg"),
               ),
             ],
           ),
           Opacity(
-            opacity: 0.25,
+            //opacity: 0.25,
             child: Container(
               color: Colors.amber[600],
               width: 200.0,
@@ -49,8 +49,8 @@ class _KleineSeiteState extends State<KleineSeite> {
             ),
           ),
           AnimatedOpacity(
-            opacity: opacityLevel,
-            duration: Duration(seconds: 3),
+           // opacity: opacityLevel,
+            //duration: Duration(seconds: 3),
             child: Container(
               color: Colors.pink[600],
               width: 200.0,
@@ -61,9 +61,6 @@ class _KleineSeiteState extends State<KleineSeite> {
             child: Text('Animation'),
             onPressed: _changeOpacity,
           ),
-          //reiheMachen("Name", "Serag"),
-          //reiheMachen("Alter", "20"),
-          //reiheMachen("checkt", "nix"),
         ],
       ),
     );
